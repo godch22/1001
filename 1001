@@ -1,0 +1,48 @@
+# denum1 = 1
+# denum2 = 3
+# num1 = 2
+# num2 = 4
+#
+#     numA = num1 * num2
+#     x = denum1 * num2
+#     y = denum2 * num1
+#     z = x + y
+#     print(z,"/",numA)
+
+
+
+
+
+# def solution(dartResult):
+#     answer = 0
+#     score = []
+#     area = {"S" : 1, "D" : 2, "T" : 3}
+#     for result in dartResult:
+#         if len(score) == 0:
+#             score.append(result)
+#         elif result.isdigit():
+#             if type(score[-1]) == str:
+#                 score.append(score.pop() + result)
+#             else:
+#                 score.append(result)
+#         elif result in area:
+#             score.append(int(score.pop()) ** area[result])
+# 
+#         elif result == '*':
+#             if len(score) == 1:
+#                 score.append(int(score.pop())*2)
+# 
+#             else:
+#                 num2 = score.pop()
+#                 num1 = score.pop()
+#                 score.append(int(num1) * 2)
+#                 score.append(int(num2) * 2)
+#         elif result == '#':
+#             score.append(int(score.pop()) * -1)
+#     answer = sum(score)
+#     return answer
+# 
+# 
+# 
+# d = "1S2D*3T"
+# print(solution(d))
